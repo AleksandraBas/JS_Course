@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="course.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <h1 class="name">Course Excercices</h1>
+    <div class="excercises">
+        <div class="clock">
+            <img id="circle" src="Circle.png">
+            <img id="hour" src="hour.png">
+            <img id="min" src="min.png">
+            <img id="sec" src="second.png">
+            <img id="insidecircle" src="insidecircle.png">
+        </div>
+        <div id="photo">
+            <div id="color">
+                <input type="color" id="base" value="#ed9fed">
+            </div>
+        </div>
+        <div class="soundkey">
+            <div class="flex1">
+                <button onClick="onClickCat()" class="sound" id="cat">CAT</button>
+                <button onClick="onClickDog()" class="sound" id="dog">DOG</button>
+            </div>
+            <div class="flex2">
+                <button onClick="onClickCow()" class="sound" id="cow">COW</button>
+                <button onClick="onClickPig()" class="sound" id="pig">PIG</button>
+            </div>
+        </div>
+    </div>
+    <div class="excercises">
+        <div class="drawing">
+            <canvas class="draw" width="1000" height="1000">
+            </canvas>
+        </div>
+        <div class="keyGame">
+            <button onClick="startGame()" id="startGameKey"> START </button>
+            <div class="keys">DOWN DOWN UP RIGHT UP</div> 
+        </div>
+        <div>
+        </div>
+    </div>
+    <audio id="catSound" src="https://www.google.com/logos/fnbx/animal_sounds/cat.mp3"></audio>
+    <audio id="dogSound" src="https://www.google.com/logos/fnbx/animal_sounds/dog.mp3"></audio>
+    <audio id="cowSound" src="https://www.google.com/logos/fnbx/animal_sounds/cow.mp3"></audio>
+    <audio id="pigSound" src="https://www.google.com/logos/fnbx/animal_sounds/pig.mp3"></audio>
+    <script src="course.js"></script>
+</body>
+</html>

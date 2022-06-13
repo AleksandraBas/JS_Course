@@ -1,0 +1,175 @@
+body {background-color: rgb(223, 223, 223);}
+h1{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+}
+.name{
+    text-align: center ;
+    font-weight: 300;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 0 1rem 0;
+    border: 5rem;
+    border-radius: 0.3rem;
+    border-color: rgb(67, 124, 222);
+    border-width: 0.5rem;
+    border-style: solid;
+    min-width: 32rem;
+    background-color: #f2ff00;
+    color: #9b18a7;
+}
+.excercises{
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.excercises > * {
+    flex: 1 100%;
+    min-width: 10rem;
+    min-height: 10rem;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border: 0.5rem;
+    border-radius: 0.3rem;
+    border-color: rgb(67, 124, 222);
+    border-width: 0.3rem;
+    border-style: solid;
+}
+button{
+    min-height: 4rem;
+    height: 100%;
+    width: 100%;
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.1rem;
+    cursor: pointer;
+    background-color: rgb(190, 233, 255);
+    transition:all 1s;
+    font-weight: bold;
+}
+.soundkey{
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+    flex-wrap:inherit;
+    justify-content: space-around;
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0.2rem 0.2rem 0.2rem 0.4rem;  
+}
+.flex2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0.2rem 0.4rem 0.2rem 0.2rem;
+}
+.playing{
+    background-color: #9df485;
+    color: #ed9fed;
+    font-size: large;
+    transform: scale(1.05);
+}
+#photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ed9fed;
+}
+.draw{
+    position: absolute;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.drawing{
+    position: relative;
+    overflow: hidden;
+}
+#circle{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#hour{
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform-origin: 100%;
+    transform:rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.09, 1.77, 0.38, 1.47);
+}
+#min{
+    height: 23%;
+    width: 23%;
+    position: absolute;
+    top: 38%;
+    left: 27%;
+    transform-origin: 100%;
+    transform:rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.09, 1.77, 0.38, 1.47);
+}
+#sec{
+    height: 25%;
+    width: 25%;
+    position: absolute;
+    top: 36.9%;
+    left: 24.7%;
+    transform-origin: 100%;
+    transform:rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.09, 1.77, 0.38, 1.47);
+}
+#insidecircle{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+.clock{
+    background-color: #bef9ae;
+    position: relative;
+}
+#startGameKey{
+    min-height: 3rem;
+    height: 60%;
+    width: 60%;
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    transition: none;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 170%;
+    background-color: #e7ff0b;
+    border-radius: 3rem;
+    border-color: #7d63e6;
+    border-width: 1rem;
+}
+.keys{
+    visibility: hidden;
+}
+.keyGame{
+    background-color:aquamarine;
+    justify-content: center;
+    color: violet;
+}
+

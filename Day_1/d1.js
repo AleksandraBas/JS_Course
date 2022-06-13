@@ -1,0 +1,158 @@
+// PIERWSZE ZADANIE - GRAJĄCE KLAWISZE
+// keycode, data-key="65" - gdy jest a tpo wtedy coś się dzieje <audio data-key="" src="x.wac"></audio>
+// constr audio = documnet,..querySelector('audio[daata-key="{e.keyCode}"])
+// key.classList.add('playing')
+//transformed, transition, 
+
+
+// DRUGIE ZADANIE - ZEGAR 
+//transform-origin:100% - 
+// transition-timig-fdunctyion cubic bezier - 
+/*
+const secondHans = documenty.guerySelector('.second-hand);
+
+
+function setdate(){
+    const now = new Date()
+    const second s = now.getseconds()
+    xonst secondsDegrees = second/60 *360
+    secondhand.style.tranform = 'rotate(${secondDeregs}ded)'
+
+}/*
+
+
+/*
+ TRZECIE ZADANIE - TRZY ZMIENIAJĄCE SIĘ KLAWISZE (BLUR, COLOR, SPACING)
+<style> 
+:root{
+    --base: colorjakis
+    --spacing: 10 px 
+    etc
+}
+img{
+    padding: var (--spacing)
+    background: var(--base)
+    filter: bluir(var(--blur))
+}
+
+.highlight{
+    color:var(--base)
+}
+}
+}
+<script>
+CONST I = DOCUMENT.QUERYSELECTORALL('.CONTROLSINPUT ')
+
+FUNCTION HANDLEuPDATE(){
+    CONSOLE.LOG*THIS.VAL;LUE)
+    CONST SUFFIX = THOS.DATASET.SIZING || '';
+    DOCUMENT.DOCUMENTELEMENT.STYLE.SERTPROPERTY(`--${THOS.NAME}, THOS VAUE + SUFFIX )
+}
+INPUTS.FORwACH(INPUT=>INPUT.ADDEVENTLISTENERS('CHANGE'), HANDLEUPDATE)
+
+INPUTS.FORwACH(INPUT=>INPUT.ADDEVENTLISTENERS('MOUSEMOVE'), HANDLEUPDATE)
+
+
+DATA-SIZING
+}
+*/
+
+
+/*zadanie 4 - FILTEROWANIE LIST I INNE DZIAŁANIA NA LISTACH 
+FILTER LIST
+CONST FIFTEEN = INVENTORS.FILTER(FUNCTION(IINVENTOR){
+    IF(INVENTOR.YEAR >== 1500 && INVENTOR.YEAR <= 1600){
+        RETURN TRUE; (KEEP IT)
+    }
+    ELSE{
+        RETURN FALSE
+    }
+})
+CONSOLE.TABLE(FIFTEEN);
+
+ARRAY PROTOTYPE MAP
+CONST FULLNAMES = INVENTORS.MAP(INVENTOR => INVENTOR.FIRSTNAME + '' + INVENTOR.LASTNAME); 
+
+SORT LIST
+CONST ORDERED = INVENTORS.SORT(FUNCTION(A,B){
+    IF A.YEAR >B.YEAR){
+        RETURN 1;
+    }
+    ELSE{
+        RETURN -1
+    }
+    }
+}
+
+REDUCE
+CONST TOTAKYEARS - INVENTORS.REDUCE(TOTAL, INVENTOR) -> {
+    RETYURN TOTAL +(INVENTOR.PASSED - INVENTOR.YEAR);
+}, 0);
+}
+
+
+CONST OLDEST - INVERTORS.SORT(FUNCTION(A,B){
+    CONST LASTGUY = A.PASSED - A.YEAR;
+    CONST NEXTGUY =B.PASSED - B.YEAR;
+    IF (LASTGUY>NEXTGUY){
+        RETURN -1;}
+        ELSE{
+            RETURN 1
+        }
+        }
+    }
+})
+
+
+
+DE IN PARIS BOULEVARDS - WIKIPEDIA
+
+CONST CATEGPORY = DOCUMNET.QUERYSELECTOR(.MW-CATEGORY');
+CONST LINKS = ARRAY.FROM(CATEGORY.QUERYSELECTORALL('A'))
+OR CONST LINKS = [...]CATEGORY.QUERYSELECTORALL('A')]
+
+CONST DE = LINKS.MAP(LINK => LINK.TEXTCONETENT);
+.FILTER)STREETNAME =? STREETNAME.INCLUDES('DE')
+
+
+
+SORT PEOPLE
+
+CONST ALPHA = PEOPLE.SORT(FUNCTION(LASTONE, NEXTONE){
+    CONST [LAST, FRIST] = LASTONE.SPLIT(', )
+    COSNT[LAST, FIRST] = NEXTONE.SP[LIT(');
+    RETURN ALAST>BLAST ? 1:-1
+})
+
+
+
+CONST TRANPORTATION = DATA.REDUCE(FUNCTION(OBJECT, ITEM) {
+IF(!OBJECT[ITEM]){
+    OBJ[ITEM] = 0;
+}
+OBJ[ITEM]++
+RETURN OBJ;
+},{});
+
+
+ZADANIE 5 - FLEX GALLERY - FLEX BOX, TRANSITION, CSS
+
+DIV CLASS = 'PANELS' ITP
+
+.PANELS{
+    DISPLAY: FLEX; 
+}
+.PANEL{
+    FLEX: 1; (ROZCIĄGAJA SIE NA SZEROKOŚĆ STRONY
+        JUSTIFY-CONTENT: CENTER;
+        ALIGN-ITEM: CENTER;
+        DISPALY: FLEX;
+        FLEX-DIRECTION: COLUMN;
+}
+JEŚLI CHCE SIĘ ABY BYŁY TAK ROŻŁOZONE TO W FLEX CHILDREN WSYZSTKEI JUSTIFY0CONTENT I ALIGN- IRTEM NA CENTER
+
+DODAĆ KLASĘ OOPEN-ACTIVE JEŚLI JEST NA NIEJ MYSZKA/KLIKNIE SIĘ  - FLEX: 5 (BEDZIE SZERSZA, A NAPISY SIĘ POKAŻĄ ) MPOŻNA DODAĆ CUBIC-BEZBIEC
+ - BĘDZIE DŁUŻEJ SIĘ OTWERAĆ TAK SMOOTH
+
+ 
+*/
